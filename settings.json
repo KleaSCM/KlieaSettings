@@ -1,0 +1,32 @@
+///////////////////////////////////////////////////////
+//                                                   //
+//                 KLIEA SETTINGS                    //
+//                                                   //
+//                                                   //
+///////////////////////////////////////////////////////
+
+
+
+//keybindings 
+// defien keybindings / shortcuts used in vs code
+
+
+// Keybindings -code Snippets  (global)
+// settitngs for code snippets define the code snippet 
+
+{
+  "macros": {
+    "insertLogSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "console.log('$1');$0"
+      }
+    ],
+    "insertBubbleSortSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "function bubbleSort(arr) {\n  let n = arr.length;\n  for (let i = 0; i < n; i++) {\n    for (let j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        let temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n  return arr;\n}\n\n// Example usage:\nconst arr = [$1];\nconsole.log(bubbleSort(arr));"
+      }
+    ]
+  }
+}

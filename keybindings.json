@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////
+//                                                   //
+//                 KeyBiNdInGs                       //
+//                                                   //
+//                                                   //
+///////////////////////////////////////////////////////
+
+
+
+
+//Keybinding for code snippets change the key combination to change the bind
+[
+  {
+    "key": "ctrl+alt+l",
+    "command": "macros.insertLogSnippet",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "macros.insertBubbleSortSnippet",
+    "when": "editorTextFocus"
+  }
+]
