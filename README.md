@@ -1,3 +1,3 @@
-KLIEA SETTINGS
-KeyBiNdInGs
-text file full of code snippets
+KLIEA SETTINGS 
+CoDeSnippets
+KEYbInDiNgS
