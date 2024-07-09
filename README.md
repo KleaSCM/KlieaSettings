@@ -1,31 +1,7 @@
-/////////////////////////////////////////////////////
-// &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//
-// &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//
-// &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  //
-// &emsp;&emsp;KLIEA SETTINGS&emsp;&emsp;//
+//////////////////////////////////////////////////////
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;////                                                 
+//&nbsp;&nbsp;&nbsp;KeyBiNdInGs&nbsp;&nbsp;&nbsp;/////                     
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;////
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;////
+//////////////////////////////////////////////////////
 
-
-
-
-
-
-
-                                                //
-//                 KLIEA SETTINGS                    //
-//                                                   //
-//                                                   //
-///////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////
-//                                                   //
-//                 KeyBiNdInGs                       //
-//                                                   //
-//                                                   //
-///////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////
-//                                                   //
-//        text file full of code snippets            //
-//                                                   //
-//                                                   //
-///////////////////////////////////////////////////////
