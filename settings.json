@@ -15,6 +15,64 @@
 // settitngs for code snippets define the code snippet 
 
 {
+  "workbench.colorCustomizations": {
+    "editor.background": "#1E1E1E",
+    "editor.foreground": "#FFFFFF",
+    "editorCursor.foreground": "#FFFFFF",
+    "editorLineNumber.foreground": "#AAAAAA",
+    "editor.selectionBackground": "#264F78",
+    "editor.inactiveSelectionBackground": "#3A3D41"
+  },
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 20,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "background.enabled": true,
+  "background.useDefault": false,
+  "background.customImages": [
+    "file:///C:/Users/Kliea/Pictures/sylvanas.jpg"
+  ],
+  "background.style": {
+    "opacity": 0.1,
+    "content": "''",
+    "pointer-events": "none",
+    "position": "absolute",
+    "z-index": "99999",
+    "background-size": "cover",
+    "width": "100%",
+    "height": "100%"
+  },
+  "workbench.sideBar.location": "left",
+  "workbench.sideBar.width": 200,
+  "explorer.compactFolders": false,
+  "explorer.iconScaling": 0.75,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.rightClickCopyPaste": true,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.editor.showTabs": true,
+  "window.zoomLevel": -0.5,
+  "workbench.iconTheme": "material-icon-theme",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "eslint.format.enable": true,
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true,
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.intelliSenseEngine": "Default",
+  "java.format.enabled": true,
+  "java.format.settings.url": ".vscode/java-formatter.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "yaml.validate": true,
+  "xml.format.splitAttributes": true,
   "macros": {
     "insertLogSnippet": [
       "editor.action.insertSnippet",
@@ -30,3 +88,4 @@
     ]
   }
 }
+
