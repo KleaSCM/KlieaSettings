@@ -9,15 +9,91 @@
 
 
 //Keybinding for code snippets change the key combination to change the bind
+
 [
   {
     "key": "ctrl+alt+l",
-    "command": "macros.insertLogSnippet",
-    "when": "editorTextFocus"
+    "command": "macros.insertLogSnippet"
   },
   {
     "key": "ctrl+alt+b",
-    "command": "macros.insertBubbleSortSnippet",
-    "when": "editorTextFocus"
+    "command": "macros.insertBubbleSortSnippet"
+  },
+  {
+    "key": "ctrl+alt+f",
+    "command": "macros.insertForLoopSnippet"
+  },
+  {
+    "key": "ctrl+alt+w",
+    "command": "macros.insertWhileLoopSnippet"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "macros.insertDoWhileLoopSnippet"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "macros.insertIndexPageSnippet"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "macros.insertWebCardSnippet"
+  },
+  {
+    "key": "ctrl+alt+v",
+    "command": "macros.insertVideoCardSnippet"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "macros.insertSearchBoxSnippet"
+  },
+  {
+    "key": "ctrl+alt+p",
+    "command": "macros.insertPictureCardSnippet"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "macros.insertMyAppSnippet"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "macros.insertNavbarSnippet"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "macros.insertCustomHookSnippet"
+  },
+  {
+    "key": "ctrl+alt+y",
+    "command": "macros.insertLayoutComponentSnippet"
+  },
+  {
+    "key": "ctrl+alt+g",
+    "command": "macros.insertDataPageSnippet"
+  },
+  {
+    "key": "ctrl+alt+a",
+    "command": "macros.insertApiHandlerSnippet"
+  },
+  {
+    "key": "ctrl+alt+e",
+    "command": "macros.insertEnvComponentSnippet"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "macros.insertDynamicRouteSnippet"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "macros.insertErrorBoundarySnippet"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "macros.insertProtectedRouteSnippet"
+  },
+  {
+    "key": "ctrl+alt+u",
+    "command": "macros.insertAuthContextSnippet"
   }
 ]
+

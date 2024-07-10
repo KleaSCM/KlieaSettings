@@ -13,6 +13,82 @@
 // Keybindings -code Snippets  (global)
 // settitngs for code snippets define the code snippet 
 
+// {
+//   "workbench.colorCustomizations": {
+//     "editor.background": "#1E1E1E",
+//     "editor.foreground": "#FFFFFF",
+//     "editorCursor.foreground": "#FFFFFF",
+//     "editorLineNumber.foreground": "#AAAAAA",
+//     "editor.selectionBackground": "#264F78",
+//     "editor.inactiveSelectionBackground": "#3A3D41"
+//   },
+//   "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+//   "editor.fontSize": 14,
+//   "editor.lineHeight": 20,
+//   "editor.fontLigatures": false,
+//   "editor.tabSize": 2,
+//   "editor.insertSpaces": true,
+//   "editor.renderWhitespace": "all",
+//   "editor.wordWrap": "on",
+//   "editor.minimap.enabled": true,  // Enable minimap
+//   "breadcrumbs.enabled": false,
+//   "background.enabled": true,
+//   "background.useDefault": false,
+//   "background.customImages": [
+//     "file:///C:/Users/Kliea/Pictures/sylvanas.jpg"
+//   ],
+//   "background.style": {
+//     "opacity": 0.1,
+//     "content": "''",
+//     "pointer-events": "none",
+//     "position": "absolute",
+//     "z-index": "99999",
+//     "background-size": "cover",
+//     "width": "100%",
+//     "height": "100%"
+//   },
+//   "workbench.sideBar.width": 200,
+//   "explorer.compactFolders": false,
+//   "explorer.iconScaling": 0.75,
+//   "terminal.integrated.fontSize": 12,
+//   "terminal.integrated.rightClickCopyPaste": true,
+//   "terminal.integrated.shellIntegration.enabled": true,
+//   "workbench.panel.defaultLocation": "right",
+//   "workbench.editor.showTabs": "multiple",
+//   "window.zoomLevel": -0.5,
+//   "workbench.iconTheme": "material-icon-theme",
+//   "python.linting.enabled": true,
+//   "python.linting.pylintEnabled": true,
+//   "python.formatting.provider": "black",
+//   "eslint.format.enable": true,
+//   "javascript.validate.enable": true,
+//   "typescript.validate.enable": true,
+//   "editor.formatOnSave": true,
+//   "prettier.requireConfig": true,
+//   "C_Cpp.clang_format_style": "file",
+//   "C_Cpp.intelliSenseEngine": "Default",
+//   "java.format.enabled": true,
+//   "java.format.settings.url": ".vscode/java-formatter.xml",
+//   "java.format.settings.profile": "GoogleStyle",
+//   "yaml.validate": true,
+//   "xml.format.splitAttributes": true,
+//   "macros": {
+//     "insertLogSnippet": [
+//       "editor.action.insertSnippet",
+//       {
+//         "snippet": "console.log('$1');$0"
+//       }
+//     ],
+//     "insertBubbleSortSnippet": [
+//       "editor.action.insertSnippet",
+//       {
+//         "snippet": "function bubbleSort(arr) {\n  let n = arr.length;\n  for (let i = 0; i < n; i++) {\n    for (let j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        let temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n  return arr;\n}\n\n// Example usage:\nconst arr = [$1];\nconsole.log(bubbleSort(arr));"
+//       }
+//     ]
+//   }
+// }
+
+
 {
   "workbench.colorCustomizations": {
     "editor.background": "#1E1E1E",
@@ -30,7 +106,7 @@
   "editor.insertSpaces": true,
   "editor.renderWhitespace": "all",
   "editor.wordWrap": "on",
-  "editor.minimap.enabled": true,  // Enable minimap
+  "editor.minimap.enabled": true,
   "breadcrumbs.enabled": false,
   "background.enabled": true,
   "background.useDefault": false,
@@ -82,10 +158,122 @@
     "insertBubbleSortSnippet": [
       "editor.action.insertSnippet",
       {
-        "snippet": "function bubbleSort(arr) {\n  let n = arr.length;\n  for (let i = 0; i < n; i++) {\n    for (let j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        let temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n  return arr;\n}\n\n// Example usage:\nconst arr = [$1];\nconsole.log(bubbleSort(arr));"
+        "snippet": "function bubbleSort(arr) {\n  let n = arr.length;\n  for (let i = 0; i < n; i++) {\n    for (let j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        let temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n  return arr;\n}\n\n// Example usage:\nconst arr = [$1];\nconsole.log(bubbleSort(arr));$0"
+      }
+    ],
+    "insertForLoopSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "for (let i = 0; i < 10; i++) {\n  console.log(i);\n}$0"
+      }
+    ],
+    "insertWhileLoopSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "let i = 0;\nwhile (i < 10) {\n  console.log(i);\n  i++;\n}$0"
+      }
+    ],
+    "insertDoWhileLoopSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "let i = 0;\ndo {\n  console.log(i);\n  i++;\n} while (i < 10);$0"
+      }
+    ],
+    "insertIndexPageSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport Head from 'next/head';\nimport Link from 'next/link';\nimport styles from '../styles/Home.module.css';\n\nconst Home: React.FC = () => {\n  return (\n    <div className={styles.container}>\n      <Head>\n        <title>Home Page</title>\n        <meta name='description' content='Generated by create next app' />\n        <link rel='icon' href='/favicon.ico' />\n      </Head>\n\n      <main className={styles.main}>\n        <h1 className={styles.title}>\n          Welcome to <Link href='https://nextjs.org'><a className={styles.link}>Next.js!</a></Link>\n        </h1>\n      </main>\n    </div>\n  );\n};\n\nexport default Home;$0"
+      }
+    ],
+    "insertWebCardSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport styles from './WebCard.module.css';\n\ninterface WebCardProps {\n  title: string;\n  description: string;\n}\n\nconst WebCard: React.FC<WebCardProps> = ({ title, description }) => {\n  return (\n    <div className={styles.card}>\n      <h2>{title}</h2>\n      <p>{description}</p>\n    </div>\n  );\n};\n\nexport default WebCard;$0"
+      }
+    ],
+    "insertVideoCardSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport styles from './VideoCard.module.css';\n\ninterface VideoCardProps {\n  title: string;\n  videoUrl: string;\n}\n\nconst VideoCard: React.FC<VideoCardProps> = ({ title, videoUrl }) => {\n  return (\n    <div className={styles.card}>\n      <h2>{title}</h2>\n      <video width='320' height='240' controls>\n        <source src={videoUrl} type='video/mp4' />\n        Your browser does not support the video tag.\n      </video>\n    </div>\n  );\n};\n\nexport default VideoCard;$0"
+      }
+    ],
+    "insertSearchBoxSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React, { useState } from 'react';\nimport styles from './SearchBox.module.css';\n\nconst SearchBox: React.FC = () => {\n  const [query, setQuery] = useState('');\n\n  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {\n    setQuery(event.target.value);\n  };\n\n  const handleSearch = () => {\n    console.log('Search query:', query);\n  };\n\n  return (\n    <div className={styles.searchBox}>\n      <input\n        type='text'\n        value={query}\n        onChange={handleInputChange}\n        placeholder='Search...'\n        className={styles.input}\n      />\n      <button onClick={handleSearch} className={styles.button}>Search</button>\n    </div>\n  );\n};\n\nexport default SearchBox;$0"
+      }
+    ],
+    "insertPictureCardSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport styles from './PictureCard.module.css';\n\ninterface PictureCardProps {\n  title: string;\n  imageUrl: string;\n  description: string;\n}\n\nconst PictureCard: React.FC<PictureCardProps> = ({ title, imageUrl, description }) => {\n  return (\n    <div className={styles.card}>\n      <img src={imageUrl} alt={title} className={styles.image} />\n      <h2>{title}</h2>\n      <p>{description}</p>\n    </div>\n  );\n};\n\nexport default PictureCard;$0"
+      }
+    ],
+    "insertMyAppSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport type { AppProps } from 'next/app';\nimport { AuthProvider } from '../context/AuthContext';\nimport '../styles/globals.css';\n\nconst MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {\n  return (\n    <AuthProvider>\n      <Component {...pageProps} />\n    </AuthProvider>\n  );\n};\n\nexport default MyApp;$0"
+      }
+    ],
+    "insertNavbarSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport Link from 'next/link';\nimport styles from './Navbar.module.css';\n\nconst Navbar: React.FC = () => {\n  return (\n    <nav className={styles.navbar}>\n      <ul className={styles.navList}>\n        <li className={styles.navItem}>\n          <Link href='/' className={styles.navLink}>Home</Link>\n        </li>\n        <li className={styles.navItem}>\n          <Link href='/about' className={styles.navLink}>About</Link>\n        </li>\n        <li className={styles.navItem}>\n          <Link href='/services' className={styles.navLink}>Services</Link>\n        </li>\n        <li className={styles.navItem}>\n          <Link href='/contact' className={styles.navLink}>Contact</Link>\n        </li>\n      </ul>\n    </nav>\n  );\n};\n\nexport default Navbar;$0"
+      }
+    ],
+    "insertCustomHookSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import { useState, useEffect } from 'react';\n\nconst useCustomHook = () => {\n  const [state, setState] = useState<string | null>(null);\n\n  useEffect(() => {\n    // Simulate fetching data\n    setTimeout(() => {\n      setState('Hello from custom hook!');\n    }, 1000);\n  }, []);\n\n  return state;\n};\n\nexport default useCustomHook;$0"
+      }
+    ],
+    "insertLayoutComponentSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport Head from 'next/head';\nimport Navbar from './Navbar';\nimport styles from './Layout.module.css';\n\ninterface LayoutProps {\n  children: React.ReactNode;\n  title?: string;\n}\n\nconst Layout: React.FC<LayoutProps> = ({ children, title = 'Default Title' }) => {\n  return (\n    <div className={styles.container}>\n      <Head>\n        <title>{title}</title>\n        <meta name='description' content='Generated by create next app' />\n        <link rel='icon' href='/favicon.ico' />\n      </Head>\n      <Navbar />\n      <main className={styles.main}>{children}</main>\n    </div>\n  );\n};\n\nexport default Layout;$0"
+      }
+    ],
+    "insertDataPageSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport useSWR from 'swr';\nimport Layout from '../components/Layout';\n\nconst fetcher = (url: string) => fetch(url).then((res) => res.json());\n\nconst DataPage: React.FC = () => {\n  const { data, error } = useSWR('/api/data', fetcher);\n\n  if (error) return <div>Failed to load data</div>;\n  if (!data) return <div>Loading...</div>;\n\n  return (\n    <Layout title='Data Page'>\n      <h1>Data Page</h1>\n      <pre>{JSON.stringify(data, null, 2)}</pre>\n    </Layout>\n  );\n};\n\nexport default DataPage;$0"
+      }
+    ],
+    "insertApiHandlerSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import type { NextApiRequest, NextApiResponse } from 'next';\n\ntype Data = {\n  message: string;\n};\n\nexport default function handler(\n  req: NextApiRequest,\n  res: NextApiResponse<Data>\n) {\n  res.status(200).json({ message: 'Hello from API' });\n}$0"
+      }
+    ],
+    "insertEnvComponentSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\n\nconst EnvComponent: React.FC = () => {\n  return <div>API URL: {process.env.CUSTOM_API_URL}</div>;\n};\n\nexport default EnvComponent;$0"
+      }
+    ],
+    "insertDynamicRouteSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import { useRouter } from 'next/router';\nimport Layout from '../../components/Layout';\n\nconst Post: React.FC = () => {\n  const router = useRouter();\n  const { id } = router.query;\n\n  return (\n    <Layout title={`Post ${id}`}>\n      <h1>Post {id}</h1>\n    </Layout>\n  );\n};\n\nexport default Post;$0"
+      }
+    ],
+    "insertErrorBoundarySnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React, { Component, ErrorInfo, ReactNode } from 'react';\n\ninterface Props {\n  children: ReactNode;\n}\n\ninterface State {\n  hasError: boolean;\n}\n\nclass ErrorBoundary extends Component<Props, State> {\n  state: State = {\n    hasError: false,\n  };\n\n  static getDerivedStateFromError(_: Error): State {\n    return { hasError: true };\n  }\n\n  componentDidCatch(error: Error, errorInfo: ErrorInfo) {\n    console.error('Uncaught error:', error, errorInfo);\n  }\n\n  render() {\n    if (this.state.hasError) {\n      return <h1>Something went wrong.</h1>;\n    }\n\n    return this.props.children;\n  }\n}\n\nexport default ErrorBoundary;$0"
+      }
+    ],
+    "insertProtectedRouteSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React from 'react';\nimport { useRouter } from 'next/router';\nimport { useAuth } from '../context/AuthContext';\n\nconst ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {\n  const { user } = useAuth();\n  const router = useRouter();\n\n  React.useEffect(() => {\n    if (!user) {\n      router.push('/login');\n    }\n  }, [user, router]);\n\n  if (!user) {\n    return <div>Loading...</div>;\n  }\n\n  return <>{children}</>;\n};\n\nexport default ProtectedRoute;$0"
+      }
+    ],
+    "insertAuthContextSnippet": [
+      "editor.action.insertSnippet",
+      {
+        "snippet": "import React, { createContext, useContext, useState, useEffect } from 'react';\n\ninterface AuthContextProps {\n  user: any;\n  login: () => void;\n  logout: () => void;\n}\n\nconst AuthContext = createContext<AuthContextProps | undefined>(undefined);\n\nexport const AuthProvider: React.FC = ({ children }) => {\n  const [user, setUser] = useState<any>(null);\n\n  useEffect(() => {\n    // Simulate fetching user\n    const fakeUser = { name: 'John Doe' };\n    setUser(fakeUser);\n  }, []);\n\n  const login = () => {\n    setUser({ name: 'John Doe' });\n  };\n\n  const logout = () => {\n    setUser(null);\n  };\n\n  return (\n    <AuthContext.Provider value={{ user, login, logout }}>\n      {children}\n    </AuthContext.Provider>\n  );\n};\n\nexport const useAuth = () => {\n  const context = useContext(AuthContext);\n  if (context === undefined) {\n    throw new Error('useAuth must be used within an AuthProvider');\n  }\n  return context;\n};$0"
       }
     ]
   }
 }
-
-
